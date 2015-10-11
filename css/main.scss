@@ -1,0 +1,16 @@
+---
+---
+
+// Colors
+$site-background: #2c3e50;
+$code-background: #fbedbb;
+$linkColor: #4078c0;
+$footerLinkColor: #a6a6a6;
+
+// Values 
+$pageWidth: 820px;
+$sidebarWidth: 200px;
+$spacing-unit: 30px;
+
+@import "layout",
+		"syntax-highlighting";

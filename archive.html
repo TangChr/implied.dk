@@ -1,0 +1,17 @@
+---
+layout: default
+title: Archive
+permalink: archive/
+---
+<ul class="post-archive">
+  {% for mypost in site.posts %}
+    <li>
+      {% assign fdate = mypost.date | date: '%b %Y' %}
+      {% if cur_date != fdate %}
+        {% assign cur_date = fdate %}
+        <h3>{{ mypost.date | date: '%B, %Y' }}</h3>
+      {% endif %}
+      <a href="{{ mypost.url | prepend: site.baseurl }}">{{ mypost.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,17 @@
+# Site Information
+title: "implied.dk"
+tagline: "Implied Code"
+author: "Christian Tang Christensen"
+generator: "Jekyll, gh-pages"
+
+# Excludes
+exclude: ["LICENSE", "serve.cmd", "Gemfile", "Gemfile.lock"]
+
+# Settings
+baseurl: /
+permalink: pretty
+relative_permalinks: true
+markdown: redcarpet
+highlighter: pygments
+sass:
+    style: expanded

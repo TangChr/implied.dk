@@ -1,0 +1,8 @@
+---
+layout: default
+title: Blog
+---
+<h1>Latest blog post</h1>
+{% assign post = site.posts.first %}
+{% assign content = post.content %}
+{% include latest_post.html %}
