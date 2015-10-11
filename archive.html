@@ -4,14 +4,14 @@ title: Archive
 permalink: archive/
 ---
 <ul class="post-archive">
-  {% for mypost in site.posts %}
+  {% for p in site.posts %}
     <li>
-      {% assign fdate = mypost.date | date: '%b %Y' %}
+      {% assign fdate = p.date | date: '%b %Y' %}
       {% if cur_date != fdate %}
         {% assign cur_date = fdate %}
-        <h3>{{ mypost.date | date: '%B, %Y' }}</h3>
+        <h3>{{ p.date | date: '%B, %Y' }}</h3>
       {% endif %}
-      <a href="{{ mypost.url | prepend: site.baseurl }}">{{ mypost.title }}</a>
+      <a href="{{ p.url }}">{{ p.title }}</a>
     </li>
   {% endfor %}
 </ul>
