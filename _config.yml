@@ -3,6 +3,7 @@ title: "implied.dk"
 tagline: "Implied Code"
 author: "Christian Tang Christensen"
 generator: "Jekyll, gh-pages"
+url: http://implied.dk
 
 # Excludes
 exclude: ["LICENSE", "serve.cmd", "Gemfile", "Gemfile.lock"]
