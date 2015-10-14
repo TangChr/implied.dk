@@ -6,7 +6,7 @@ generator: "Jekyll, gh-pages"
 url: http://implied.dk
 
 # Excludes
-exclude: ["LICENSE", "serve.cmd", "Gemfile", "Gemfile.lock"]
+exclude: ["serve.cmd", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
 # Settings
 baseurl: /

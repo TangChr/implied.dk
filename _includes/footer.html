@@ -1,29 +1,20 @@
 <footer id="site-footer">
 	<div class="footer-box">
 		<h4>Recent posts</h4>
-            <ul>
-				{% for post in site.posts limit:5 %}
-				<li><a href="{{post.url}}">{{post.title}}</a></li>
-				{% endfor %}
+            <ul>{% for post in site.posts limit:5 %}
+				<li><a href="{{post.url}}">{{post.title}}</a></li>{% endfor %}
             </ul>
 	</div>
 	<div class="footer-box">
 		<h4>Network</h4>
-		<ul>
-			<li><a href="https://twitter.com/TangChr">Twitter</a></li>
-			<li><a href="https://www.facebook.com/profile.php?id=1323079301">Facebook</a></li>
-			<li><a href="http://linkedin.com/in/christiantang">LinkedIn</a></li>
-			<li><a href="http://instagram.com/tangchr">Instagram</a></li>
-			<li><a href="https://github.com/TangChr">GitHub</a></li>
+		<ul>{% for n in site.data.network %}
+			<li><a href="{{ n.url }}">{{ n.name }}</a></li>{% endfor %}
 		</ul>
 	</div>
 	<div class="footer-box">
 		<h4>Sites</h4>
-		<ul>
-			<li><a href="http://christiantang.dk">ChristianTang.dk</a></li>
-			<li><a href="http://seaweed.dk">seaweed.dk</a></li>
-			<li><a href="http://skrevetudiet.dk">Skrevetudiet.dk</a></li>
-			<li><a href="http://willitcompile.net">Will It Compile?</a></li>
+		<ul>{% for s in site.data.sites %}
+			<li><a href="{{ s.url }}">{{ s.name }}</a></li>{% endfor %}
 		</ul>
 	</div>
 </footer>

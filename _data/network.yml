@@ -1,0 +1,20 @@
+- name: Twitter
+  url:  https://twitter.com/TangChr
+  
+- name: Facebook
+  url:  https://www.facebook.com/profile.php?id=1323079301
+  
+- name: LinkedIn
+  url:  http://linkedin.com/in/christiantang
+  
+- name: Instagram
+  url:  http://instagram.com/tangchr
+  
+- name: Google+
+  url:  https://plus.google.com/+ChristianTangChristensenProfile
+  
+- name: GitHub
+  url:  https://github.com/TangChr
+  
+- name: npm
+  url:  https://www.npmjs.com/~tangchr
