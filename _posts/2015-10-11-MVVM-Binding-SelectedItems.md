@@ -10,6 +10,7 @@ After some extensive google'ing I found a solution which involved overriding the
 ### SelectedItemsView.xaml
 
 {% highlight xml %}
+<!-- SelectedItemsView.xaml -->
 <ListView ItemsSource="{Binding Path=Users}">
 	<ListView.View>
 		<GridView>
@@ -28,6 +29,7 @@ After some extensive google'ing I found a solution which involved overriding the
 ### User.cs
 
 {% highlight csharp %}
+// User.cs
 public class User
 {
 	public string FirstName { get; set; }
@@ -39,6 +41,7 @@ public class User
 ### SelectedItemsViewModel.cs
 
 {% highlight csharp %}
+// SelectedItemsViewModel.cs
 public class SelectedItemsViewModel
 {
 	public ObservableCollection<User> Users { get; private set; }
