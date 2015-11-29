@@ -7,8 +7,8 @@ Recently I had to use the SelectedItems property on a WPF ListView in a MVVM bas
 
 After some extensive google'ing I found a solution which involved overriding the ItemContainerStyle in order to add an IsSelected property to the model.
 <div class="seperator"></div>
-*SelectedItemsView.xaml*
 
+*SelectedItemsView.xaml*
 {% highlight xml %}
 <!-- SelectedItemsView.xaml -->
 <ListView ItemsSource="{Binding Path=Users}">
@@ -26,7 +26,6 @@ After some extensive google'ing I found a solution which involved overriding the
 </ListView>
 {% endhighlight %}
 *User.cs*
-
 {% highlight csharp %}
 // User.cs
 public class User
@@ -37,7 +36,6 @@ public class User
 }
 {% endhighlight %}
 *SelectedItemsViewModel.cs*
-
 {% highlight csharp %}
 // SelectedItemsViewModel.cs
 public class SelectedItemsViewModel
@@ -67,4 +65,3 @@ public class SelectedItemsViewModel
 	}
 }
 {% endhighlight %}
-

@@ -1,6 +1,6 @@
 ---
 layout: post
-date:   2015-11-28 14:10:00
+date:   2015-11-29 14:13:00
 title:  "Enable PHP sessions in WordPress"
 ---
 I have been using WordPress for several years now. I primarily use it as a CMS-system instead of a weblog. I have a tendancy for ending up writing plugins or just tweaking the website instad of using it as an actual blog.
@@ -14,7 +14,8 @@ And in case you are wondering, I did write a plugin!
 #### Install the plugin
 To install the plugin just create a PHP-file in the plugins-folder (usually /wp-content/plugins) and paste the following code into that file. Log in to the Control Panel and activate the plugin.
 <div class="seperator"></div>
-*activate-sessions.php*
+
+*session-activator.php*
 {% highlight php %}
 <?php
 /*
@@ -24,17 +25,17 @@ Version: 1.0.0
 Author: Christian Tang
 Author URI: http://christiantang.dk
 */
-add_action('init', 'enable_session_start', 1);
-add_action('wp_logout', 'enable_session_end');
-add_action('wp_login', 'enable_session_end');
+add_action('init', 'session_activator_start', 1);
+add_action('wp_logout', 'session_activator_end');
+add_action('wp_login', 'session_activator_end');
 
-function enable_session_start() {
+function session_activator_start() {
     if(!session_id()) {
         session_start();
     }
 }
 
-function enable_session_end() {
+function session_activator_end() {
     session_destroy();
 }
 ?>
