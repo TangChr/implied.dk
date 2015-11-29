@@ -1,15 +1,11 @@
 /**
  * Visual Studio 2013+ Syntax highlighting Scheme for Pygments
  */
- %vertical-rhythm {
-    margin-bottom: 15px;
-}
-
 .highlight {
     background: #1e1e1e;
 	padding: 8px 6px;
 	margin-top: 0px;
-    @extend %vertical-rhythm;
+    margin-bottom: 15px;
 	white-space: pre-wrap;
 	overflow: auto;
 	
