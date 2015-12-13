@@ -1,9 +1,8 @@
 # Site Information
-title: "implied.dk"
-tagline: "Implied Code"
+title: " Will It Compile?"
 author: "Christian Tang Christensen"
 generator: "Jekyll, gh-pages"
-url: http://implied.dk
+url: http://willitcompile.net
 
 # Excludes
 exclude: ["serve.cmd", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

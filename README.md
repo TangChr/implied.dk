@@ -1,4 +1,4 @@
-[implied.dk](http://implied.dk)
+[Will It Compile?](http://willitcompile.net)
 ===============================
 Weblog about programming based on [Jekyll](http://jekyllrb.com) and [GitHub Pages](https://pages.github.com).
 
