@@ -10,7 +10,7 @@ exclude: ["serve.cmd", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 # Settings
 baseurl: /
 permalink: pretty
-relative_permalinks: true
+relative_permalinks: false
 markdown: redcarpet
 highlighter: pygments
 sass:

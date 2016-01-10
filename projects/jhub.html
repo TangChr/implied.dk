@@ -1,0 +1,85 @@
+---
+title: jhub
+layout: project
+permalink: /projects/jhub/
+---
+jhub is a simple JavaScript library, which makes it possible to query the GitHub API for various information, such as:
+<ul>
+	<li>Repositories</li>
+	<li>Users</li>
+	<li>Organizations</li>
+	<li>Gists</li>
+</ul>
+<div class="seperator"></div>
+The source code for jhub can be found <a href="https://github.com/TangChr/jhub">here</a>.
+<div class="seperator"></div>
+<h3>Basic examples</h3>
+{% highlight javascript %}
+/* Get repositories */
+var github = jhub.init('TangChr');
+github.userRepos(function(result) {
+  for(i in result) {
+    console.log(result[i].name);
+  }
+});
+{% endhighlight %}
+<div class="seperator"></div>
+{% highlight javascript %}
+/* Get starred repositories */
+var github = jhub.init('TangChr');
+github.starredRepos(function(result) {
+  for(i in result) {
+    console.log(result[i].name);
+  }
+});
+{% endhighlight %}
+<div class="seperator"></div>
+{% highlight javascript %}
+/* Get releases */
+var github = jhub.init('TangChr');
+var repo = github.userRepo('jhub');
+repo.releases(function(result) {
+  for(i in result)
+    console.log(result[i].tagName + ': ' + result[i].name);
+});
+{% endhighlight %}
+<div class="seperator"></div>
+{% highlight javascript %}
+/* Get commits */
+var github = jhub.init('TangChr');
+var repo = git.userRepo('jhub');
+repo.commits(function(result) {
+  for(i in result)
+    console.log(result[i].author);
+    console.log(result[i].comitter);
+    console.log(result[i].message);
+});
+{% endhighlight %}
+
+<h3>Advanced examples</h3>
+{% highlight javascript %}
+/* List a users organizations */
+var github = jhub.init('TangChr');
+github.userOrgs(function(orgsRes) {
+    for(o in orgsRes) {
+        var org = github.org(orgsRes[o].login);
+        org.get(function(orgRes) {
+            console.log(orgRes.login+': '+orgRes.name);
+        });
+    }
+});
+{% endhighlight %}
+<div class="seperator"></div>
+{% highlight javascript %}
+/* List members of a specific organization */
+var github = jhub.init();
+var org = github.org('TangMedia');
+org.members(function(members) {
+    for(m in members) {
+        var user = github.user(members[m].login);
+        user.get(function(userRes) {
+            console.log(userRes.name);
+        });
+    }
+});
+{% endhighlight %}

@@ -2,5 +2,6 @@
 	<h4>By {{site.author}}</h4>
     <div class="menu-item"><a href="/" class="{% if page.title == 'Blog' %}current{% endif %}">Blog</a></div>
     <div class="menu-item"><a href="/archive/" class="{% if page.title == 'Archive' or include.isPost == 'true' %}current{% endif %}">Archive</a></div>
+	<div class="menu-item"><a href="/projects/" class="{% if page.title == 'Projects' or include.isProject == 'true' %}current{% endif %}">Projects</a></div>
 	<div class="menu-item"><a href="/about/" class="{% if page.title == 'About' %}current{% endif %}">About</a></div>
 </nav>

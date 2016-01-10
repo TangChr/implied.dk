@@ -1,6 +1,6 @@
 ---
-layout: default
 title: About
-permalink: about/
+layout: page
+permalink: /about/
 ---
-_Under construction_
+_Coming soon..._
