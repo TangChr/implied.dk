@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
     <title>
 	{% if page.title %}
-		{{ page.title }} | {{ site.title }}
+		{% if include.prefix %}{{ include.prefix }}{% endif %}{{ page.title }} | {{ site.title }}
 	{% else %}
 		{{ site.title }}
 	{% endif %}

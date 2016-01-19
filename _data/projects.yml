@@ -1,0 +1,8 @@
+- name:      "jhub"
+  permalink: "jhub"
+  github:	 "https://github.com/TangChr/jhub"
+  npm:		 "https://www.npmjs.com/package/jhub"
+  
+- name: 	 "PHP Dynamic SQLite"
+  permalink: "php-dynamic-sqlite"
+  github:	 "https://github.com/TangChr/php-dynamic-sqlite"

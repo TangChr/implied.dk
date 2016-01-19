@@ -3,9 +3,10 @@ title: Projects
 layout: page
 permalink: /projects/
 ---
-On this page you'll find documentation for different projects I'm working on. This section will only be used for my own projects.
-<div class="seperator"></div>
-<h2>Web</h2>
+<p>On this page you'll find documentation for different projects I'm working on. This section will only be used for my own projects.</p>
+<h3>Projects</h3>
 <ul>
-	<li><a href="{{ site.baseurl }}projects/jhub">jhub</a></li>
+	{% for p in site.data.projects %}
+	<li><a href="{{ site.baseurl }}projects/{{ p.permalink }}">{{ p.name }}</a></li>
+	{% endfor %}
 </ul>
