@@ -11,7 +11,11 @@ exclude: ["serve.cmd", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 baseurl: /
 permalink: pretty
 relative_permalinks: false
-markdown: redcarpet
+markdown: kramdown
 highlighter: pygments
+kramdown:
+  input: GFM
+  hard_wrap: false
+  
 sass:
     style: expanded

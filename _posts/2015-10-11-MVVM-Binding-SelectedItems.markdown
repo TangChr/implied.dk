@@ -6,8 +6,8 @@ title: "MVVM Binding SelectedItems"
 Recently I had to use the SelectedItems property on a WPF ListView in a MVVM based application. This however turned out to be a bit of a problem because SelectedItems doesn't work when using databinding.
 
 After some extensive google'ing I found a solution which involved overriding the ItemContainerStyle in order to add an IsSelected property to the model.
-<div class="seperator"></div>
 
+<div class="seperator"></div>
 *SelectedItemsView.xaml*
 {% highlight xml %}
 <!-- SelectedItemsView.xaml -->
