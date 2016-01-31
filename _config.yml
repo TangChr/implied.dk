@@ -1,8 +1,14 @@
 # Site Information
 title: " Will It Compile?"
-author: "Christian Tang Christensen"
 generator: "Jekyll, gh-pages"
 url: http://willitcompile.net
+description: "Weblog about software development and webdesign"
+
+author:
+  name: "Christian Tang Christensen"
+  uri: http://seaweed.dk
+  twitter: TangChr
+  github: TangChr
 
 # Excludes
 exclude: ["serve.cmd", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
@@ -16,6 +22,6 @@ highlighter: pygments
 kramdown:
   input: GFM
   hard_wrap: false
-  
+
 sass:
     style: expanded
