@@ -1,5 +1,5 @@
 # Site Information
-title: " Will It Compile?"
+title: "Will It Compile?"
 generator: "Jekyll, gh-pages"
 url: http://willitcompile.net
 description: "Weblog about software development and webdesign"
@@ -8,20 +8,16 @@ author:
   name: "Christian Tang Christensen"
   uri: http://seaweed.dk
   twitter: TangChr
-  github: TangChr
 
-# Excludes
-exclude: ["serve.cmd", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
-
-# Settings
+# Build settings
 baseurl: /
+destination: _site
 permalink: pretty
-relative_permalinks: false
 markdown: kramdown
 highlighter: pygments
 kramdown:
   input: GFM
   hard_wrap: false
-
-sass:
-    style: expanded
+  
+# Excludes
+exclude: ["serve.cmd", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

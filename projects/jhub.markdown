@@ -1,7 +1,6 @@
 ---
 title: 	   "jhub"
 layout:    project
-permalink: "/projects/jhub/"
 github:    "https://github.com/TangChr/jhub"
 npm: 	   "https://www.npmjs.com/package/jhub"
 ---
