@@ -13,7 +13,8 @@ Simple PHP-library for working with SQLite databases.
 - Insert values using arrays
 
 ### Examples
-{% highlight php %}
+
+```php
 <?php
 /*
 Example: Create table
@@ -31,9 +32,10 @@ $sqlite->initDb();
 
 $sqlite->createTable($table);
 ?>
-{% endhighlight %}
+```
 <div class="seperator"></div>
-{% highlight php %}
+
+```php
 <?php
 /*
 Example: Insert row
@@ -50,4 +52,4 @@ $message = array('title'=>'My Title', 'text'=>'My Message');
 if($sqlite->insert($table, $message))
     echo 'Success!';
 ?>
-{% endhighlight %}
+```

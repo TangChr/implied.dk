@@ -1,5 +1,5 @@
 /**
- * Visual Studio 2013+ Syntax highlighting Scheme for Pygments
+ * Visual Studio 2013+ Syntax highlighting Scheme for Rouge
  */
 .highlight {
     background: #1e1e1e;
@@ -8,8 +8,9 @@
     margin-bottom: 15px;
 	white-space: pre-wrap;
 	overflow: auto;
-	
+   
 	.lineno { color: #2b91af; }
+   color: #d0d0d0;
 	.c { color: #43a63a; font-style: italic; }
 	.err { color: #a61717; background-color: #e3d2d2; }
 	.g { color: #d0d0d0; }

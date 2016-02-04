@@ -4,20 +4,20 @@ generator: "Jekyll, gh-pages"
 url: http://willitcompile.net
 description: "Weblog about software development and webdesign"
 
+# Author
 author:
   name: "Christian Tang Christensen"
   uri: http://seaweed.dk
-  twitter: TangChr
 
+timezone: Europe/Copenhagen
+  
 # Build settings
 baseurl: /
 destination: _site
 permalink: pretty
-markdown: kramdown
-highlighter: pygments
+highlighter: rouge
 kramdown:
   input: GFM
-  hard_wrap: false
   
 # Excludes
 exclude: ["serve.cmd", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

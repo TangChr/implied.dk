@@ -9,59 +9,62 @@ After some extensive google'ing I found a solution which involved overriding the
 
 <div class="seperator"></div>
 *SelectedItemsView.xaml*
-{% highlight xml %}
+
+```xml
 <!-- SelectedItemsView.xaml -->
 <ListView ItemsSource="{Binding Path=Users}">
-	<ListView.View>
-		<GridView>
-			<GridViewColumn Header="First Name" Width="120" DisplayMemberBinding="{Binding Path=FirstName}" />
-			<GridViewColumn Header="Last Name" Width="120" DisplayMemberBinding="{Binding Path=LastName}" />
-		</GridView>
-	</ListView.View>
-	<ListView.ItemContainerStyle>
-		<Style TargetType="{x:Type ListViewItem}">
-			<Setter Property="IsSelected" Value="{Binding Path=IsSelected, Mode=TwoWay}" />
-		</Style>
-	</ListView.ItemContainerStyle>
+    <ListView.View>
+        <GridView>
+            <GridViewColumn Header="First Name" Width="120" DisplayMemberBinding="{Binding Path=FirstName}" />
+            <GridViewColumn Header="Last Name" Width="120" DisplayMemberBinding="{Binding Path=LastName}" />
+        </GridView>
+    </ListView.View>
+    <ListView.ItemContainerStyle>
+        <Style TargetType="{x:Type ListViewItem}">
+            <Setter Property="IsSelected" Value="{Binding Path=IsSelected, Mode=TwoWay}" />
+        </Style>
+    </ListView.ItemContainerStyle>
 </ListView>
-{% endhighlight %}
+```
 *User.cs*
-{% highlight csharp %}
+
+```csharp
 // User.cs
 public class User
 {
-	public string FirstName { get; set; }
-	public string LastName { get; set; }
-	public bool IsSelected { get; set; }
+    public string FirstName { get; set; }
+    public string LastName { get; set; }
+    public bool IsSelected { get; set; }
 }
-{% endhighlight %}
+```
 *SelectedItemsViewModel.cs*
-{% highlight csharp %}
+
+```csharp
 // SelectedItemsViewModel.cs
 public class SelectedItemsViewModel
 {
-	public ObservableCollection<User> Users { get; private set; }
+    public ObservableCollection<User> Users { get; private set; }
 
-	public SelectedItemsViewModel()
-	{
-		LoadUsers();
-	}
+    public SelectedItemsViewModel()
+    {
+        LoadUsers();
+    }
 
-	private void LoadUsers()
-	{
-		Users = new ObservableCollection<User>();
-		Users.Add(new User { FirstName = "John", LastName = "Doe" });
-		Users.Add(new User { FirstName = "Jane", LastName = "Doe" });
-		Users.Add(new User { FirstName = "Joey", LastName = "Doe" });
-		Users.Add(new User { FirstName = "Jackie", LastName = "Doe" });
-	}
-	
-	public void PrintSelectedUsers()
-	{
-		var selectedUsers = Users.Where(u => u.IsSelected == true);
-		
-		foreach(var u in selectedUsers)
-			Console.WriteLine("{0}, {1}", u.LastName, u.FirstName);
-	}
+    private void LoadUsers()
+    {
+        Users = new ObservableCollection<User>();
+        Users.Add(new User { FirstName = "John", LastName = "Doe" });
+        Users.Add(new User { FirstName = "Jane", LastName = "Doe" });
+        Users.Add(new User { FirstName = "Joey", LastName = "Doe" });
+        Users.Add(new User { FirstName = "Jackie", LastName = "Doe" });
+    }
+
+    public void PrintSelectedUsers()
+    {
+        var selectedUsers = Users.Where(u => u.IsSelected == true);
+        
+        foreach(var u in selectedUsers)
+            Console.WriteLine("{0}, {1}", u.LastName, u.FirstName);
+    }
 }
-{% endhighlight %}
+```

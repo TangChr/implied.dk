@@ -13,18 +13,17 @@ In order to solve this issue, I thought to myself, what if I wrote a plugin?
 And in case you are wondering, I did write a plugin!
 
 #### Install the plugin
-To install the plugin just create a PHP-file in the plugins-folder (usually /wp-content/plugins) and paste the following code into that file. Log in to the Control Panel and activate the plugin.
+To install the plugin just create a PHP-file (e.g. *session-activator.php*) in the plugins-folder (usually /wp-content/plugins) and paste the following code into that file. Log in to the Control Panel and activate the plugin.
 
-<div class="seperator"></div>
-*session-activator.php*
-{% highlight php %}
+```php
 <?php
 /*
 Plugin Name: Session Activator
+Plugin URI: http://willitcompile.net
 Description: Enables the use of PHP sessions ($_SESSION) in themes and plugins.
 Version: 1.0.0
 Author: Christian Tang
-Author URI: http://christiantang.dk
+Author URI: http://seaweed.dk
 */
 add_action('init', 'session_activator_start', 1);
 add_action('wp_logout', 'session_activator_end');
@@ -40,4 +39,4 @@ function session_activator_end() {
     session_destroy();
 }
 ?>
-{% endhighlight %}
+```
