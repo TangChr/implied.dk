@@ -12,9 +12,6 @@ I recently had to write a theme which included a lot of functionality writtin di
 In order to solve this issue, I thought to myself, what if I wrote a plugin?
 And in case you are wondering, I did write a plugin!
 
-#### Install the plugin
-To install the plugin just create a PHP-file (e.g. *session-activator.php*) in the plugins-folder (usually /wp-content/plugins) and paste the following code into that file. Log in to the Control Panel and activate the plugin.
-
 ```php
 <?php
 /*
@@ -40,3 +37,6 @@ function session_activator_end() {
 }
 ?>
 ```
+
+#### Install the plugin
+To install the plugin just create a PHP-file (e.g. *session-activator.php*) in the plugins-folder (usually /wp-content/plugins) and paste the following code into that file. Log in to the Control Panel and activate the plugin.

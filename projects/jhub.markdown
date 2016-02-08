@@ -1,19 +1,23 @@
 ---
-title: 	   "jhub"
-layout:    project
-github:    "https://github.com/TangChr/jhub"
-npm: 	   "https://www.npmjs.com/package/jhub"
+title: 	"jhub"
+layout: project
+github: "https://github.com/TangChr/jhub"
+npm: 	"https://www.npmjs.com/package/jhub"
 ---
 **jhub** is a simple JavaScript library, which makes it possible to query the GitHub API for various information, such as:
 
-#### Features
 - Repositories
+  - Commits
+  - Releases
 - Users
 - Organizations
+  - Repositories
+  - Members
 - Gists
+  - Files
 
 <div class="seperator"></div>
-The source code for jhub can be found [here](https://hub.com/TangChr/jhub).
+The source code for jhub can be found [here]({{ page.github }}), or installed using [npm]({{ page.npm }}).
 
 ### Basic examples
 ```javascript
@@ -71,7 +75,7 @@ repo.commits(function(commits) {
 });
 ```
 
-### Advanced examples
+### "Advanced" examples
 ```javascript
 /*
 List a users organizations
@@ -117,7 +121,7 @@ hub.userGists(function(gists) {
 });
 ```
 
-### Gist files
+<div class="seperator"></div>
 ```javascript
 /*
 List all Gists for a specific user (only public Gists will be shown)

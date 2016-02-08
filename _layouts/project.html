@@ -8,7 +8,7 @@
 			<div id="content-wrapper">
 			<h1>Project: {{ page.title }}</h1>
 			{% if page.github or page.npm %}
-				<p>Source Code/Download:&nbsp;{% if page.github %}<a href="{{ page.github }}" title="GitHub"><img src="{{ site.baseurl }}images/github-16.png" /></a>&nbsp;{% endif %}{% if page.npm %}<a href="{{ page.npm }}" title="npm"><img src="{{ site.baseurl }}images/npm-16.png" /></a>{% endif %}</p>
+				<p>Source Code/Download:&nbsp;{% if page.github %}<a href="{{ page.github }}" title="GitHub"><img src="{{ site.baseurl }}assets/images/github-16.png" /></a>&nbsp;{% endif %}{% if page.npm %}<a href="{{ page.npm }}" title="npm"><img src="{{ site.baseurl }}assets/images/npm-16.png" /></a>{% endif %}</p>
 			{% endif %}
 			{{content}}
 			</div>

@@ -19,5 +19,9 @@ highlighter: rouge
 kramdown:
   input: GFM
   
+gems:
+  - jekyll-feed
+  - jekyll-sitemap
+  
 # Excludes
-exclude: ["serve.cmd", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
+exclude: [CNAME, Gemfile, Gemfile.lock, serve.cmd, LICENSE, README.md]
