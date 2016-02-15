@@ -1,0 +1,39 @@
+@mixin slated-top-left($size, $foreground, $background) {
+    content: '';
+    position: absolute;
+    width: 0;
+    top: 0;
+    left: 0;
+    border-top: $size solid $background;
+    border-right: $size solid $foreground;
+}
+
+@mixin slated-top-right($size, $foreground, $background) {
+    content: '';
+    position: absolute;
+    width: 0;
+    top: 0;
+    right: 0;
+    border-top: $size solid $background;
+    border-left: $size solid $foreground;
+}
+
+@mixin slated-bottom-right($size, $foreground, $background) {
+    content: '';
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    right: 0;
+    border-bottom: $size solid $background;
+    border-left: $size solid $foreground;
+}
+
+@mixin slated-bottom-left($size, $foreground, $background) {
+    content: '';
+    position: absolute;
+    width: 0;
+    bottom: 0;
+    left: 0;
+    border-bottom: $size solid $background;
+    border-right: $size solid $foreground;
+}

@@ -65,13 +65,7 @@ body {
     margin-right: 5px;
 
     &:after {
-    	content: '';
-    	position: absolute;
-    	top: 0;
-    	right: 0;
-    	border-top: 30px solid $site-background;
-    	border-left: 30px solid rgba(0,0,0,0);
-    	width: 0;
+    	@include slated-top-right($menuSlateSize, #fff, $site-background);
     }
     
     a,
@@ -107,13 +101,7 @@ body {
 	background: #fff;
 	
 	&:after {
-		content: '';
-		position: absolute;
-		top: 0;
-		right: 0;
-		border-top: 15px solid $site-background;
-		border-left: 15px solid rgba(0,0,0,0);
-		width: 0;
+		@include slated-top-right($pageSlateSize, #fff, $site-background);
 	}
 }
 
@@ -125,23 +113,11 @@ body {
 	font-size: 1em;
  
 	&:before {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		border-bottom: 15px solid $site-background;
-		border-right: 15px solid rgba(0,0,0,0);
-		width: 0;
+		@include slated-bottom-left($pageSlateSize, #fff, $site-background);
 	}
 
 	&:after {
-		content: '';
-		position: absolute;
-		bottom: 0;
-		right: 0;
-		border-bottom: 15px solid $site-background;
-		border-left: 15px solid rgba(0,0,0,0);
-		width: 0;
+		@include slated-bottom-right($pageSlateSize, #fff, $site-background);
 	}
 	
 	ul {

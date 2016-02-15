@@ -5,11 +5,14 @@ layout: null
 // Colors
 $site-background: #2c3e50;
 $code-background: #fbedbb;
-$linkColor: #4078c0;
+$linkColor: #e74c3c;
 $footerLinkColor: #a6a6a6;
 
 // Dimensions
 $pageWidth: 820px;
+$pageSlateSize: 15px;
+$menuSlateSize: 30px;
 
-@import "layout",
-		"syntax-vs2k1x";
+@import "mixins",
+        "layout",
+		"syntax";
