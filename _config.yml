@@ -1,24 +1,25 @@
-# Site Information
+# Site
 title: "Will It Compile?"
-generator: "Jekyll, gh-pages"
-url: http://willitcompile.net
 description: "Weblog about software development and webdesign"
+
+url: http://willitcompile.net
+baseurl: '/'
+permalink: pretty
+timezone: Europe/Copenhagen
 
 # Author
 author:
   name: "Christian Tang Christensen"
-  uri: http://seaweed.dk
-
-timezone: Europe/Copenhagen
   
-# Build settings
-baseurl: /
-destination: _site
-permalink: pretty
-highlighter: rouge
+# Build
+markdown: kramdown
 kramdown:
   input: GFM
-  
+  syntax_highlighter: rouge
+
+environment: production
+
+# Other
 gems:
   - jekyll-feed
   - jekyll-sitemap

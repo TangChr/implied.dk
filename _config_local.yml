@@ -1,0 +1,5 @@
+# Site
+url: http://localhost:4000
+
+# Build
+environment: development
