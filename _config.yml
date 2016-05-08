@@ -1,6 +1,7 @@
 # Site
 title: "Will It Compile?"
 description: "Weblog about software development and webdesign"
+github_repo: "https://github.com/TangChr/willitcompile.net"
 
 url: http://willitcompile.net
 baseurl: '/'

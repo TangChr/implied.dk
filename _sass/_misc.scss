@@ -1,0 +1,19 @@
+#source-code-link {
+    font-size: 100%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-family: Arial, Verdana;
+    font-weight: bold;
+    
+    a,
+    a:link,
+    a:visited {
+        color: #fff;
+        text-decoration: none;
+        
+        &:hover {
+            color: #a6a6a6;
+        }
+    }
+}
