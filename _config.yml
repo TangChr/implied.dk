@@ -1,7 +1,11 @@
 # Site
 title: "Will It Compile?"
-description: "Weblog about software development and webdesign"
-github_repo: "https://github.com/TangChr/willitcompile.net"
+description: 'Weblog about software development and webdesign'
+
+# Repository
+repo:
+  name:      'willitcompile.net'
+  github_url: 'https://github.com/TangChr/willitcompile.net'
 
 url: http://willitcompile.net
 baseurl: '/'
@@ -10,7 +14,7 @@ timezone: Europe/Copenhagen
 
 # Author
 author:
-  name: "Christian Tang Christensen"
+  name: 'Christian Tang Christensen'
   
 # Build
 markdown: kramdown
