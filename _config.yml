@@ -1,33 +1,36 @@
 # Site
-title: "Will It Compile?"
+title: 'Will It Compile?'
 description: 'Weblog about software development and webdesign'
+url: 'http://willitcompile.net'
 
 # Repository
 repo:
-  name:      'willitcompile.net'
   github_url: 'https://github.com/TangChr/willitcompile.net'
-
-url: http://willitcompile.net
-baseurl: '/'
-permalink: pretty
-timezone: Europe/Copenhagen
 
 # Author
 author:
   name: 'Christian Tang Christensen'
   
+timezone: Europe/Copenhagen
+  
 # Build
+environment: production
+baseurl: '/'
+permalink: pretty
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-
-environment: production
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - LICENSE
+  - serve.cmd
+  - vendor
 
 # Other
 gems:
   - jekyll-feed
   - jekyll-sitemap
-  
-# Excludes
-exclude: [CNAME, Gemfile, Gemfile.lock, serve.cmd, LICENSE, README.md]
