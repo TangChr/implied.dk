@@ -3,10 +3,6 @@ title: 'Will It Compile?'
 description: 'Weblog about software development and webdesign'
 url: 'http://willitcompile.net'
 
-# Repository
-repo:
-  github_url: 'https://github.com/TangChr/willitcompile.net'
-
 # Author
 author:
   name: 'Christian Tang Christensen'
