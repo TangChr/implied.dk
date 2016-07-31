@@ -1,20 +1,5 @@
 <footer id="site-footer">
-	<div class="footer-box">
-		<h4>Recent posts</h4>
-            <ul>{% for post in site.posts limit:5 %}
-				<li><a href="{{post.url}}">{{post.title}}</a></li>{% endfor %}
-            </ul>
-	</div>
-	<div class="footer-box">
-		<h4>Web 2.0</h4>
-		<ul>{% for web in site.data.web20 %}
-			<li><a href="{{ web.url }}">{{ web.name }}</a></li>{% endfor %}
-		</ul>
-	</div>
-	<div class="footer-box">
-		<h4>Sites</h4>
-		<ul>{% for s in site.data.sites %}
-			<li><a href="{{ s.url }}">{{ s.name }}</a></li>{% endfor %}
-		</ul>
-	</div>
+	{% include footer_links.html title='Web 2.0' links=site.posts limit=5 %}
+	{% include footer_links.html title='Web 2.0' links=site.data.web20 limit=10 %}
+	{% include footer_links.html title='Sites' links=site.data.sites limit=10 %}
 </footer>

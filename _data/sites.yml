@@ -1,8 +1,8 @@
-- name: seaweed.dk
-  url:  http://seaweed.dk
+- title:   seaweed.dk
+  url:     http://seaweed.dk
 
-- name: ChristianTang.dk
-  url:  http://christiantang.dk
+- title:   ChristianTang.dk
+  url:     http://christiantang.dk
   
-- name: Skrevetudiet.dk
-  url:  http://skrevetudiet.dk
+- title:   Skrevetudiet.dk
+  url:     http://skrevetudiet.dk

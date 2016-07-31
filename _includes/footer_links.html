@@ -1,0 +1,6 @@
+<div class="footer-box">
+  <h4>{{ include.title }}</h4>
+  <ul>{% for link in include.links limit:include.limit %}
+    <li><a href="{{ link.url }}"{% if link.ignore %} data-proofer-ignore{% endif %}>{{ link.title }}</a></li>{% endfor %}
+  </ul>
+</div>
