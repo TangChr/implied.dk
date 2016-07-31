@@ -1,20 +1,21 @@
-- name: Twitter
-  url:  https://twitter.com/TangChr
+- title:   Twitter
+  url:     https://twitter.com/TangChr
   
-- name: Facebook
-  url:  https://www.facebook.com/TangChr
+- title:   Facebook
+  url:     https://www.facebook.com/TangChr
   
-- name: LinkedIn
-  url:  http://linkedin.com/in/christiantang
+- title:   LinkedIn
+  url:     http://linkedin.com/in/christiantang
+  ignore:  true
   
-- name: Instagram
-  url:  http://instagram.com/tangchr
+- title:   Instagram
+  url:     http://instagram.com/tangchr
   
-- name: Google+
-  url:  https://plus.google.com/+ChristianTangChristensenProfile
+- title:   Google+
+  url:     https://plus.google.com/+ChristianTangChristensenProfile
   
-- name: GitHub
-  url:  https://github.com/TangChr
+- title:   GitHub
+  url:     https://github.com/TangChr
   
-- name: npm
-  url:  https://www.npmjs.com/~tangchr
+- title:   npm
+  url:     https://www.npmjs.com/~tangchr
