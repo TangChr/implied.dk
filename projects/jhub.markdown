@@ -1,12 +1,11 @@
 ---
 title: 	jhub
 layout: project
-github: "https://github.com/TangChr/jhub"
-npm: 	"https://www.npmjs.com/package/jhub"
 meta:
   github:
     user: TangChr
     repo: jhub
+    released: true
   npm: jhub
   travis:
     active: true

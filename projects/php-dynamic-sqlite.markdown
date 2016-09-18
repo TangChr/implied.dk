@@ -1,7 +1,10 @@
 ---
 title: 	   "PHP Dynamic SQLite"
 layout:    project
-github:    "https://github.com/TangChr/php-dynamic-sqlite"
+meta:
+  github:
+    user: TangChr
+    repo: php-dynamic-sqlite
 ---
 Simple PHP-library for working with SQLite databases.
 
