@@ -1,10 +1,18 @@
 ---
-title: 	"jhub"
+title: 	jhub
 layout: project
 github: "https://github.com/TangChr/jhub"
 npm: 	"https://www.npmjs.com/package/jhub"
+meta:
+  github:
+    user: TangChr
+    repo: jhub
+  npm: jhub
+  travis:
+    active: true
+    branch: master
 ---
-**jhub** is a simple JavaScript library, which makes it possible to query the GitHub API for various information, such as:
+jhub is a simple JavaScript library, which makes it possible to query the GitHub API for various information, such as:
 
 - Repositories
   - Commits
