@@ -1,4 +1,4 @@
-[Will It Compile?](http://willitcompile.net)
+[Will It Compile?](http://willitcompile.net) [![Build Status](https://travis-ci.org/TangChr/willitcompile.net.svg?branch=gh-pages)](https://travis-ci.org/TangChr/willitcompile.net)
 ===============================
 Weblog about programming based on [Jekyll](http://jekyllrb.com) and [GitHub Pages](https://pages.github.com).
 
