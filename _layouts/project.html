@@ -9,19 +9,19 @@
 			<h1>Project: {{ page.title }}</h1>
 			<div class="badges">
 				{% if page.meta.github.user and page.meta.github.repo %}
-					<a href="https://github.com/{{ page.meta.github.user}}/{{ page.meta.github.repo}}"><img src="https://img.shields.io/badge/Source-GitHub-green.svg" /></a>
+					<a href="https://github.com/{{ page.meta.github.user}}/{{ page.meta.github.repo}}"><img src="https://img.shields.io/badge/Source-GitHub-green.svg" alt="Source Code" /></a>
 					{% if page.meta.github.released %}
-						<a href="https://github.com/{{ page.meta.github.user}}/{{ page.meta.github.repo}}/releases/latest"><img src="https://img.shields.io/github/release/{{ page.meta.github.user}}/{{ page.meta.github.repo}}.svg?label=GitHub" /></a>
+						<a href="https://github.com/{{ page.meta.github.user}}/{{ page.meta.github.repo}}/releases/latest"><img src="https://img.shields.io/github/release/{{ page.meta.github.user}}/{{ page.meta.github.repo}}.svg?label=GitHub" alt="GitHub Release" /></a>
 					{% endif %}
 				{% endif %}
 				{% if page.meta.npm %}
-					<a href="https://www.npmjs.com/package/{{ page.meta.npm}}"><img src="http://img.shields.io/npm/v/{{ page.meta.npm }}.svg" /></a>
+					<a href="https://www.npmjs.com/package/{{ page.meta.npm}}"><img src="http://img.shields.io/npm/v/{{ page.meta.npm }}.svg" alt="npm package version" /></a>
 				{% endif %}
 				{% if page.meta.travis.active %}
-					<a href="https://travis-ci.org/{{ page.meta.github.user}}/{{ page.meta.github.repo}}"><img src="https://travis-ci.org/{{ page.meta.github.user}}/{{ page.meta.github.repo}}.svg?branch={{ page.meta.travis.branch }}" /></a>
+					<a href="https://travis-ci.org/{{ page.meta.github.user}}/{{ page.meta.github.repo}}"><img src="https://travis-ci.org/{{ page.meta.github.user}}/{{ page.meta.github.repo}}.svg?branch={{ page.meta.travis.branch }}" alt="Build Status" /></a>
 				{% endif %}
 				{% if page.meta.github.user and page.meta.github.repo %}
-					<a href="https://github.com/{{ page.meta.github.user}}/{{ page.meta.github.repo}}/blob/master/LICENSE"><img src="https://img.shields.io/github/license/{{ page.meta.github.user}}/{{ page.meta.github.repo}}.svg" /></a>
+					<a href="https://github.com/{{ page.meta.github.user}}/{{ page.meta.github.repo}}/blob/master/LICENSE"><img src="https://img.shields.io/github/license/{{ page.meta.github.user}}/{{ page.meta.github.repo}}.svg" alt="License" /></a>
 				{% endif %}
 			</div>
 			{{content}}
