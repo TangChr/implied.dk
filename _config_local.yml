@@ -1,7 +1,3 @@
-# Site
-url: http://localhost:4000
-repository: TangChr/willitcompile.net
-
 # Build
 environment: development
 gems:
