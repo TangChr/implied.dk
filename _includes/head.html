@@ -9,6 +9,6 @@
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title }} | Feed" href="{{ site.url | append: site.baseurl }}feed.xml" />
 </head>
 <body>
-<div id="github-repo-link-wrapper">
-  {% include github_button.html url=site.github.repository_url text='View on GitHub' title='View project on GitHub' %}
+<div id="github-button-wrapper">
+{% include github_button.html id='github-button' size=35 url=site.github.repository_url title='View project on GitHub' %}
 </div>
