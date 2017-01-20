@@ -24,7 +24,7 @@ jhub is a simple JavaScript library, which makes it possible to query the GitHub
   - Files
 
 <div class="seperator"></div>
-The source code for jhub can be found [here]({{ page.github }}), or installed using [npm]({{ page.npm }}).
+The source code for jhub can be found [here]({{ page.github }}), or installed using [npm](https://www.npmjs.com/package/jhub).
 
 ### Basic examples
 ```javascript
