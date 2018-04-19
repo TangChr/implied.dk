@@ -3,10 +3,10 @@
     <meta charset="utf-8" />
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="author" content="{{ site.author.name }}" />
-	<meta name="generator" content="{{ site.generator }}" />
+    <meta name="generator" content="{{ site.generator }}" />
     <title>{% if page.title %}{{ page.title | append: ' | ' }}{% endif %}{{ site.title }}{% if site.environment == 'development' or site.url == 'http://localhost:4000' %} (Dev. Mode){% endif %}</title>
-    <link rel="stylesheet" href="{{ site.url | append: site.baseurl }}assets/css/style.css"/>
-	<link rel="alternate" type="application/rss+xml" title="{{ site.title }} | Feed" href="{{ site.url | append: site.baseurl }}feed.xml" />
+    <link rel="stylesheet" href="{{ site.baseurl }}assets/css/style.css" type="text/css" media="screen" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} | Feed" href="{{ site.url | append: site.baseurl }}feed.xml" />
 </head>
 <body>
 <div id="github-button-wrapper">
