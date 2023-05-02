@@ -12,7 +12,7 @@ timezone: Europe/Copenhagen
   
 # Build
 environment: production
-baseurl: 'http://willitcompile.net/'
+baseurl: 'https://willitcompile.net/'
 permalink: pretty
 markdown: kramdown
 kramdown:
